@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: mysql:8.2
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_PW}
+    ports:
+      - ${MYSQL_PORT}:3306
+    volumes:
+      - ${MYSQL_PATH}:/var/lib/mysql

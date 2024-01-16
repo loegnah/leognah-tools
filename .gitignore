@@ -1,1 +1,7 @@
-./data
+.env*
+!.env*.example
+
+.idea
+.vscode
+
+data
